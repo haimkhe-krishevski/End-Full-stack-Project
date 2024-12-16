@@ -7,7 +7,7 @@
             "driver": "PostgreSQL",
             "username": "postgres",
             "name": "end_project",
-            "database": "postgres",
+            "database": "end_project",
             "password": "12345678"
         }
     ]

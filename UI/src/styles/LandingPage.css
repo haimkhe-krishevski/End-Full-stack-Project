@@ -1,0 +1,19 @@
+.landing-page {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .landing-page .projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .project-card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    width: 200px;
+    text-align: center;
+  }
+  
