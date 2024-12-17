@@ -1,0 +1,11 @@
+.ProjectsContainerHeader {
+        background-color: rgb(90, 52, 2);
+        color: white;
+        text-align: center;
+        padding: 1rem 0;
+        position: relative; /* תאפשר תנועה טבעית מתחת לתוכן */
+        width: 100%; /* נמתח לכל הרוחב */
+        height: 100px;
+        box-sizing: border-box;
+        box-shadow: 0 7px 7px rgba(121, 78, 9, 0.411);
+    }

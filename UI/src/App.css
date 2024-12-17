@@ -1,19 +1,35 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* כלליים */
+
+.main-content {
+  flex: 1; /* ממלא את כל הגובה הנותר */
+  display: flex;
+  flex-direction: column; /* מאפשר לפרוג'קטס ולפוטר להיות מסודרים */
 }
 
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column; /* סידור התוכן בעמודה */
+  min-height: 100vh; /* לפחות גובה המסך */
+}
+
+/* לוגו */
 .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -33,10 +49,20 @@
   }
 }
 
+/* כרטיס */
 .card {
   padding: 2em;
 }
 
+/* הקישור לתיעוד */
 .read-the-docs {
   color: #888;
+}
+
+/* מותאם לגלישה ברוחב מסכים שונים */
+@media (max-width: 768px) {
+  .logo {
+    height: 4em;
+    padding: 1em;
+  }
 }

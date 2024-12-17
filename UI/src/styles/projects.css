@@ -1,0 +1,23 @@
+.projects {
+    background-color: #0b7d26;
+    width: 100%; /* נמתח את הרוחב לכל המסך */
+    min-height: 100vh; /* לפחות בגובה המסך */
+    color: white; /* צבע הטקסט */
+    display: flex; /* למרכז את התוכן */
+    flex-direction: column; /* שורת טקסט מתחת לשורה */
+    justify-content: center; /* מרכז ורטיקלי */
+    align-items: center; /* מרכז אופקי */
+    box-sizing: border-box; /* כולל פדינג בגבולות */
+  }
+
+
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem 0;
+  }
+  
+  
+  
