@@ -32,6 +32,39 @@ const Projects = () => {
         image="https://via.placeholder.com/400x200"
         comment="This is a comment for the first project."
       />
+
+      <Project
+        name="My First Project"
+        description="This is a manually added project."
+        link="https://example.com"
+        image="https://via.placeholder.com/400x200"
+        comment="This is a comment for the first project."
+      />
+
+      <Project
+        name="My First Project"
+        description="This is a manually added project."
+        link="https://example.com"
+        image="https://via.placeholder.com/400x200"
+        comment="This is a comment for the first project."
+      />
+
+      <Project
+        name="My First Project"
+        description="This is a manually added project."
+        link="https://example.com"
+        image="https://via.placeholder.com/400x200"
+        comment="This is a comment for the first project."
+      />    
+
+      <Project
+        name="My First Project"
+        description="This is a manually added project."
+        link="https://example.com"
+        image="https://via.placeholder.com/400x200"
+        comment="This is a comment for the first project."
+      />
+
       <Project
         name="My First Project"
         description="This is a manually added project."
@@ -54,7 +87,311 @@ const Projects = () => {
         link="https://example.com"
         image="https://via.placeholder.com/400x200"
         comment="This is a comment for the first project."
-      />      
+      />
+
+      <Project
+        name="My First Project"
+        description="This is a manually added project."
+        link="https://example.com"
+        image="https://via.placeholder.com/400x200"
+        comment="This is a comment for the first project."
+      />
+
+      <Project
+        name="My First Project"
+        description="This is a manually added project."
+        link="https://example.com"
+        image="https://via.placeholder.com/400x200"
+        comment="This is a comment for the first project."
+      />
+      
+      <Project
+        name="My First Project"
+        description="This is a manually added project."
+        link="https://example.com"
+        image="https://via.placeholder.com/400x200"
+        comment="This is a comment for the first project."
+      />
+
+      <Project
+        name="My First Project"
+        description="This is a manually added project."
+        link="https://example.com"
+        image="https://via.placeholder.com/400x200"
+        comment="This is a comment for the first project."
+      />
+
+      <Project
+        name="My First Project"
+        description="This is a manually added project."
+        link="https://example.com"
+        image="https://via.placeholder.com/400x200"
+        comment="This is a comment for the first project."
+      />
+
+      <Project
+        name="My First Project"
+        description="This is a manually added project."
+        link="https://example.com"
+        image="https://via.placeholder.com/400x200"
+        comment="This is a comment for the first project."
+      />
+
+      <Project
+        name="My First Project"
+        description="This is a manually added project."
+        link="https://example.com"
+        image="https://via.placeholder.com/400x200"
+        comment="This is a comment for the first project."
+      />
+
+      <Project
+        name="My First Project"
+        description="This is a manually added project."
+        link="https://example.com"
+        image="https://via.placeholder.com/400x200"
+        comment="This is a comment for the first project."
+      />    
+      
+      <Project
+        name="My First Project"
+        description="This is a manually added project."
+        link="https://example.com"
+        image="https://via.placeholder.com/400x200"
+        comment="This is a comment for the first project."
+      />
+
+      <Project
+        name="My First Project"
+        description="This is a manually added project."
+        link="https://example.com"
+        image="https://via.placeholder.com/400x200"
+        comment="This is a comment for the first project."
+      />
+
+      <Project
+        name="My First Project"
+        description="This is a manually added project."
+        link="https://example.com"
+        image="https://via.placeholder.com/400x200"
+        comment="This is a comment for the first project."
+      />
+
+      <Project
+        name="My First Project"
+        description="This is a manually added project."
+        link="https://example.com"
+        image="https://via.placeholder.com/400x200"
+        comment="This is a comment for the first project."
+      />
+
+      <Project
+        name="My First Project"
+        description="This is a manually added project."
+        link="https://example.com"
+        image="https://via.placeholder.com/400x200"
+        comment="This is a comment for the first project."
+      />
+
+      <Project
+        name="My First Project"
+        description="This is a manually added project."
+        link="https://example.com"
+        image="https://via.placeholder.com/400x200"
+        comment="This is a comment for the first project."
+      />
+      
+      <Project
+        name="My First Project"
+        description="This is a manually added project."
+        link="https://example.com"
+        image="https://via.placeholder.com/400x200"
+        comment="This is a comment for the first project."
+      />
+
+      <Project
+        name="My First Project"
+        description="This is a manually added project."
+        link="https://example.com"
+        image="https://via.placeholder.com/400x200"
+        comment="This is a comment for the first project."
+      />
+
+      <Project
+        name="My First Project"
+        description="This is a manually added project."
+        link="https://example.com"
+        image="https://via.placeholder.com/400x200"
+        comment="This is a comment for the first project."
+      />
+
+      <Project
+        name="My First Project"
+        description="This is a manually added project."
+        link="https://example.com"
+        image="https://via.placeholder.com/400x200"
+        comment="This is a comment for the first project."
+      />
+
+      <Project
+        name="My First Project"
+        description="This is a manually added project."
+        link="https://example.com"
+        image="https://via.placeholder.com/400x200"
+        comment="This is a comment for the first project."
+      />
+
+      <Project
+        name="My First Project"
+        description="This is a manually added project."
+        link="https://example.com"
+        image="https://via.placeholder.com/400x200"
+        comment="This is a comment for the first project."
+      />    
+
+      <Project
+        name="My First Project"
+        description="This is a manually added project."
+        link="https://example.com"
+        image="https://via.placeholder.com/400x200"
+        comment="This is a comment for the first project."
+      />
+
+      <Project
+        name="My First Project"
+        description="This is a manually added project."
+        link="https://example.com"
+        image="https://via.placeholder.com/400x200"
+        comment="This is a comment for the first project."
+      />
+
+      <Project
+        name="My First Project"
+        description="This is a manually added project."
+        link="https://example.com"
+        image="https://via.placeholder.com/400x200"
+        comment="This is a comment for the first project."
+      />
+
+      <Project
+        name="My First Project"
+        description="This is a manually added project."
+        link="https://example.com"
+        image="https://via.placeholder.com/400x200"
+        comment="This is a comment for the first project."
+      />
+
+      <Project
+        name="My First Project"
+        description="This is a manually added project."
+        link="https://example.com"
+        image="https://via.placeholder.com/400x200"
+        comment="This is a comment for the first project."
+      />
+
+      <Project
+        name="My First Project"
+        description="This is a manually added project."
+        link="https://example.com"
+        image="https://via.placeholder.com/400x200"
+        comment="This is a comment for the first project."
+      />
+      
+      <Project
+        name="My First Project"
+        description="This is a manually added project."
+        link="https://example.com"
+        image="https://via.placeholder.com/400x200"
+        comment="This is a comment for the first project."
+      />
+
+      <Project
+        name="My First Project"
+        description="This is a manually added project."
+        link="https://example.com"
+        image="https://via.placeholder.com/400x200"
+        comment="This is a comment for the first project."
+      />
+
+      <Project
+        name="My First Project"
+        description="This is a manually added project."
+        link="https://example.com"
+        image="https://via.placeholder.com/400x200"
+        comment="This is a comment for the first project."
+      />
+
+      <Project
+        name="My First Project"
+        description="This is a manually added project."
+        link="https://example.com"
+        image="https://via.placeholder.com/400x200"
+        comment="This is a comment for the first project."
+      />
+
+      <Project
+        name="My First Project"
+        description="This is a manually added project."
+        link="https://example.com"
+        image="https://via.placeholder.com/400x200"
+        comment="This is a comment for the first project."
+      />
+
+      <Project
+        name="My First Project"
+        description="This is a manually added project."
+        link="https://example.com"
+        image="https://via.placeholder.com/400x200"
+        comment="This is a comment for the first project."
+      />    
+      
+      <Project
+        name="My First Project"
+        description="This is a manually added project."
+        link="https://example.com"
+        image="https://via.placeholder.com/400x200"
+        comment="This is a comment for the first project."
+      />
+
+      <Project
+        name="My First Project"
+        description="This is a manually added project."
+        link="https://example.com"
+        image="https://via.placeholder.com/400x200"
+        comment="This is a comment for the first project."
+      />
+
+      <Project
+        name="My First Project"
+        description="This is a manually added project."
+        link="https://example.com"
+        image="https://via.placeholder.com/400x200"
+        comment="This is a comment for the first project."
+      />
+
+      <Project
+        name="My First Project"
+        description="This is a manually added project."
+        link="https://example.com"
+        image="https://via.placeholder.com/400x200"
+        comment="This is a comment for the first project."
+      />
+
+      <Project
+        name="My First Project"
+        description="This is a manually added project."
+        link="https://example.com"
+        image="https://via.placeholder.com/400x200"
+        comment="This is a comment for the first project."
+      />
+
+      <Project
+        name="My First Project"
+        description="This is a manually added project."
+        link="https://example.com"
+        image="https://via.placeholder.com/400x200"
+        comment="This is a comment for the first project."
+      /> 
 
     </div>
   );
