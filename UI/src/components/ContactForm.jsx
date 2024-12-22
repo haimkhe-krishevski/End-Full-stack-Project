@@ -39,6 +39,7 @@ console.log({response});
 
   return (
     <form onSubmit={handleSubmit}>
+      <h2>Contact Us</h2>
       <input
         type="text"
         name="fullName"

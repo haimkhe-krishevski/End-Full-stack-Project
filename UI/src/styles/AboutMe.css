@@ -1,0 +1,154 @@
+/*
+ כאן יוגדרו עיצובי הקומפוננטה קצת עליי (AboutMe), יינתנו פונטי יפים מתאימים,
+יוגדרו עיצובי אזור התמונות , יוגדר עיצוב כפתור הדפדוף,
+בדומה לכפתור הדפדוף של תמונות הסטורי באינסטגרם (עיגול קטן שבתוכו סימן גדול מ או קטן מ בהתאם,
+יוגדר עיצוב לכל אחד מהם לימין או לשמאל,
+ תוגדר גם היחסיות עם אזור האב של הקומפוננטה, 
+תוגדרו עיצובי תכילת המשפטים של הקומפוננטה, תוגדרו עיצובי תכילת התוכן המחקה של הקומפוננטה
+ועוד דברים מדהימים, הולך לצאץ פגז!
+ */
+.AboutMe-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #f1f1f1;
+  }
+  
+  .AboutMe-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .AboutMe-container p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .AboutMe-container img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  } 
+  
+  .AboutMe-container ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .AboutMe-container li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .AboutMe-container li::before {
+    content: "\2022";
+    margin-right: 0.5rem;
+  }
+  
+  .AboutMe-container a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .AboutMe-container a:hover {
+    text-decoration: underline;
+  }
+  
+  .left-button, .right-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  .left-button {
+    left: 1rem;
+  }
+  
+  .right-button {
+    right: 1rem;
+  }
+  
+  .AboutMe-container {
+    position: relative;
+  }
+  
+  .AboutMe-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  .AboutMe-container h1 {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .AboutMe-container p {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .AboutMe-container img {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .AboutMe-container ul {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .AboutMe-container a {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .AboutMe-container li {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .AboutMe-container li::before {
+    position: relative;
+    z-index: 2;
+  } 
+  
+  .AboutMe-container .left-button, .AboutMe-container .right-button {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .AboutMe-container .left-button {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .AboutMe-container .right-button {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .AboutMe-container .left-button:hover, .AboutMe-container .right-button:hover {
+    color: #fff;
+  }
+  
+  .AboutMe-container .left-button:active, .AboutMe-container .right-button:active {
+    color: #ccc;
+  }
+  
+  .AboutMe-container .left-button {
+    left: 1rem;
+  }
+  
+  .AboutMe-container .right-button {
+    right: 1rem;
+  }
