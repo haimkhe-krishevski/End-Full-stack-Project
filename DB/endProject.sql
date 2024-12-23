@@ -28,6 +28,50 @@
 -- ('Alice', 'Great work on the recent project!'),
 -- ('Bob', 'I think the design could use some improvement.');
 
+
+-- יצירת טבלת projects
+CREATE TABLE projects (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    description TEXT NOT NULL,
+    link VARCHAR(255),
+    image VARCHAR(255)
+);
+
+-- יצירת טבלת comments
+CREATE TABLE comments (
+    id SERIAL PRIMARY KEY,
+    project_id INT NOT NULL,
+    name VARCHAR(100) NOT NULL,
+    comment TEXT NOT NULL,
+    FOREIGN KEY (project_id) REFERENCES projects(id) ON DELETE CASCADE
+);
+
+
+-- הוספת פרויקטים לטבלת projects
+INSERT INTO projects (name, description, link, image)
+VALUES 
+('My First Project', 'This is a manually added project.', 'https://example.com', 'https://via.placeholder.com/400x200'),
+('Another Project', 'This is another project description.', 'https://another-example.com', 'https://via.placeholder.com/400x200');
+
+-- הוספת תגובות לטבלת comments
+INSERT INTO comments (project_id, name, comment)
+VALUES
+(1, 'Alice', 'Great project!'),
+(1, 'Bob', 'Very informative.'),
+(2, 'Charlie', 'Looks amazing!'),
+(2, 'Dana', 'I love the design!');
+
+SELECT * FROM projects;
+
+SELECT p.name AS project_name, c.name AS commenter_name, c.comment
+FROM comments c
+JOIN projects p ON c.project_id = p.id
+WHERE p.id = 1;
+
+
+
+
 -- בדיקות
 
 SELECT * FROM contact_forms;

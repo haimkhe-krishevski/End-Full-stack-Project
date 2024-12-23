@@ -50,6 +50,7 @@ const express = require('express');
 const pool = require('./db');
 const cors = require('cors');
 const app = express();
+const projectsRoutes = require('./projectsRoutes');
 const port = 3000; // אפשר לשנות את הפורט אם תרצה
 
 // Middleware to parse JSON
@@ -66,6 +67,11 @@ app.get('/test-db', async (req, res) => {
     res.status(500).json({ success: false, error: err.message });
   }
 });
+
+// הפעלת הראוט של הפרויקטים
+// Routes
+// לזכור לוודא שמונח הראוט הנכון
+app.use('/', projectsRoutes);
 
 // קבלת נתוני הטופס ושמירתם בדאטה-בייס
 app.post('/contact', async (req, res) => {

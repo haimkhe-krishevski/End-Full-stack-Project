@@ -66,3 +66,22 @@ body, html {
     padding: 1em;
   }
 }
+
+
+.Header {
+  background-color: rgb(62, 36, 1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  position: fixed; /* נשאר תמיד למעלה */
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center; /* מרכז ורטיקלי */
+  align-items: center; /* מרכז אופקי */
+  box-sizing: border-box; /* כולל פדינג בגבולות */
+  z-index: 1000; /* וודא שהוא מעל תוכן */
+}
