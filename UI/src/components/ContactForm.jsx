@@ -98,9 +98,17 @@ const ContactForm = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit =async (e) => {
     e.preventDefault();
     // **שליחה לדאטה בייס (להוסיף בקוד ה-backend המתאים)** 
+
+  const response = await  fetch("http://localhost:3000/ContactUs/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    })
     console.log("Form submitted:", formData);
     setIsSubmitted(true); // הצגת הודעת הצלחה
   };
