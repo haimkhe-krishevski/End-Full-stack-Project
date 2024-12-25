@@ -50,6 +50,7 @@ const express = require('express');
 const pool = require('./db');
 const cors = require('cors');
 const app = express();
+const commentsRoutes = require('./commentsRoutes');
 const projectsRoutes = require('./projectsRoutes');
 const port = 3000; // אפשר לשנות את הפורט אם תרצה
 
@@ -72,6 +73,8 @@ app.get('/test-db', async (req, res) => {
 // Routes
 // לזכור לוודא שמונח הראוט הנכון
 app.use('/', projectsRoutes);
+app.use('/', commentsRoutes);
+
 
 // קבלת נתוני הטופס ושמירתם בדאטה-בייס
 app.post('/contact', async (req, res) => {

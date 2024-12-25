@@ -47,6 +47,10 @@ CREATE TABLE comments (
     FOREIGN KEY (project_id) REFERENCES projects(id) ON DELETE CASCADE
 );
 
+ALTER TABLE comments
+ADD COLUMN created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP;
+
+
 
 -- הוספת פרויקטים לטבלת projects
 INSERT INTO projects (name, description, link, image)
@@ -62,6 +66,12 @@ VALUES
 (2, 'Charlie', 'Looks amazing!'),
 (2, 'Dana', 'I love the design!');
 
+
+
+
+
+-- בדיקות
+
 SELECT * FROM projects;
 
 SELECT p.name AS project_name, c.name AS commenter_name, c.comment
@@ -69,10 +79,6 @@ FROM comments c
 JOIN projects p ON c.project_id = p.id
 WHERE p.id = 1;
 
-
-
-
--- בדיקות
 
 SELECT * FROM contact_forms;
 SELECT * FROM work_feedback;

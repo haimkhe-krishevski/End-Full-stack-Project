@@ -1,13 +1,13 @@
-.projects {
+/* .projects {
     background-color: #0b7d26;
-    width: 100%; /* נמתח את הרוחב לכל המסך */
-    min-height: 100vh; /* לפחות בגובה המסך */
-    color: white; /* צבע הטקסט */
-    display: flex; /* למרכז את התוכן */
-    flex-direction: column; /* שורת טקסט מתחת לשורה */
-    justify-content: center; /* מרכז ורטיקלי */
-    align-items: center; /* מרכז אופקי */
-    box-sizing: border-box; /* כולל פדינג בגבולות */
+    width: 100%; 
+    min-height: 100vh; 
+    color: white; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    box-sizing: border-box; 
   }
 
 
@@ -17,6 +17,57 @@
     justify-content: center;
     gap: 1rem;
     padding: 2rem 0;
+  } */
+  
+
+
+
+
+  /* 
+  
+  
+  
+  
+  
+  */
+
+
+
+  
+  .project-comments {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .project-comments strong {
+    color: #333;
+  }
+
+  .add-comment-section {
+    margin-top: 20px;
+  }
+  
+  .add-comment-section input,
+  .add-comment-section textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  
+  .add-comment-section button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .add-comment-section button:hover {
+    background-color: #0056b3;
   }
   
   
