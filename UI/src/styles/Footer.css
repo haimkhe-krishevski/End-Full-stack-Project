@@ -2,8 +2,16 @@
   background-color: #333;
   color: white;
   text-align: center;
-  padding: 1rem 0;
-  position: relative; /* תאפשר תנועה טבעית מתחת לתוכן */
-  width: 100%; /* נמתח לכל הרוחב */
+  /* padding: 1rem 0; */
+  position: relative; 
+  width: 100%; 
   box-sizing: border-box;
+  bottom: 0;
+
+/* ניסיונות */
+
+  /* position: absolute; */
+
+
 }
+

@@ -20,7 +20,7 @@
 
 // קוד חדש להתאמה עם הקוד החדש ב App
 
-import '../styles/footer.css';
+import '../styles/Footer.css';
 
 const Footer = () => {
   return (

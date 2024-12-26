@@ -10,11 +10,11 @@
 
 .header {
   background-color: rgb(62, 36, 1);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgb(95, 58, 4);
   color: white;
   padding: 1rem;
   text-align: center;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
@@ -24,6 +24,8 @@
   align-items: center;
   box-sizing: border-box;
   z-index: 1000;
+  /* בשורות הבאות יוגדר שלא יהיה מתחתיו קומפוננטות אלא יתחילו אחריו כולל הגדרות הריווח שלהן */
+  
 }
 
 

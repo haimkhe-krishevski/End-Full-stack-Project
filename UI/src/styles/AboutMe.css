@@ -1,4 +1,4 @@
-/*
+/* 
  כאן יוגדרו עיצובי הקומפוננטה קצת עליי (AboutMe), יינתנו פונטי יפים מתאימים,
 יוגדרו עיצובי אזור התמונות , יוגדר עיצוב כפתור הדפדוף,
 בדומה לכפתור הדפדוף של תמונות הסטורי באינסטגרם (עיגול קטן שבתוכו סימן גדול מ או קטן מ בהתאם,
@@ -8,13 +8,17 @@
 ועוד דברים מדהימים, הולך לצאץ פגז!
  */
 .AboutMe-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-    background-color: #f1f1f1;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  margin-top: 1rem;
+  background-color: #f1f1f1;
+}
+
+
+/* 
   
   .AboutMe-container h1 {
     font-size: 2.5rem;
@@ -152,3 +156,8 @@
   .AboutMe-container .right-button {
     right: 1rem;
   }
+
+.carier-img {
+    max-width: 100%;
+    height: auto;
+  } */

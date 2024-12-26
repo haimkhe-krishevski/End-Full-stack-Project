@@ -57,6 +57,29 @@ INSERT INTO projects (name, description, link, image)
 VALUES 
 ('My First Project', 'This is a manually added project.', 'https://example.com', 'https://via.placeholder.com/400x200'),
 ('Another Project', 'This is another project description.', 'https://another-example.com', 'https://via.placeholder.com/400x200');
+INSERT INTO projects (name, description, link, image)
+VALUES
+('example to img valid', 'example to img valid', 'https://example.com', 'https://via.placeholder.com/400x200');
+
+INSERT INTO projects (name, description, link, image)
+VALUES
+('example no. 2', 'example to img valid', 'C:\Users\User\Documents\Full stack\Code folders\End-Full-stack-Project\UI\src\media\פרופיל יוסי שפיגלר.jpg', 'https://via.placeholder.com/400x200');
+
+INSERT INTO projects (name, description, link, image)
+VALUES
+('example no. 3', 'example to img valid', 'C:\Users\User\Documents\Full stack\Code folders\End-Full-stack-Project\UI\src\media\פרופיל יוסי שפיגלר.jpg', 'UI/src/media/פרופיל יוסי שפיגלר.jpg');
+
+-- עדכון מגבלת תוים לתמיכה בקישור ארוך
+ALTER TABLE projects
+ALTER COLUMN link TYPE VARCHAR(500);
+ALTER COLUMN image TYPE VARCHAR(500);
+
+
+
+
+INSERT INTO projects (name, description, link, image)
+VALUES
+('example no. 4', 'example to img valid', 'https://yt3.googleusercontent.com/ytc/AIdro_niQu6E6-fm35Ch1lahvAvBpg-ACLEHcX0lCPnlropVtA', 'https://yt3.googleusercontent.com/ytc/AIdro_niQu6E6-fm35Ch1lahvAvBpg-ACLEHcX0lCPnlropVtA');
 
 -- הוספת תגובות לטבלת comments
 INSERT INTO comments (project_id, name, comment)
