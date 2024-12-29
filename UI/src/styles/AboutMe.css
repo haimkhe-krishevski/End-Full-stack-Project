@@ -7,7 +7,7 @@
 תוגדרו עיצובי תכילת המשפטים של הקומפוננטה, תוגדרו עיצובי תכילת התוכן המחקה של הקומפוננטה
 ועוד דברים מדהימים, הולך לצאץ פגז!
  */
-.AboutMe-container {
+/* .AboutMe-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,7 +15,7 @@
   padding: 2rem;
   margin-top: 1rem;
   background-color: #f1f1f1;
-}
+} */
 
 
 /* 

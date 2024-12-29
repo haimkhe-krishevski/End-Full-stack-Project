@@ -14,18 +14,17 @@
   color: white;
   padding: 1rem;
   text-align: center;
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  height: 4rem;
   display: flex;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  z-index: 1000;
-  /* בשורות הבאות יוגדר שלא יהיה מתחתיו קומפוננטות אלא יתחילו אחריו כולל הגדרות הריווח שלהן */
-  
+  z-index: 1000;  
 }
 
 

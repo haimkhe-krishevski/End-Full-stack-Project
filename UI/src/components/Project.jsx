@@ -57,7 +57,9 @@ const Project = ({ id, name, description, link, image, comment ,setProjects}) =>
         <a href={link} className="project-link" target="_blank" rel="noopener noreferrer">
           Watch/Listen
         </a>
-        <img src={image} alt={`${name}`} className="project-image" />
+        <div className="project-image-container"> 
+          <img src={image} alt={`${name}`} className="project-image" />
+        </div>
       </div>
       <div className="project-bottom">
         <p className="project-comment">{comment}</p>

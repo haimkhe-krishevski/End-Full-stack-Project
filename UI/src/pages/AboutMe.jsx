@@ -5,10 +5,12 @@ import AboutBody from "../components/AboutBody";
 import '../styles/Page.css';
 function AboutMe() {
   return (
+    <div className="container">
     <div className="page">
       <Header />
       <AboutBody />
       <Footer />
+    </div>
     </div>
   )
 }

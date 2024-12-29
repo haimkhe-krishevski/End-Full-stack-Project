@@ -10,6 +10,11 @@ body, html {
   margin: 0;
   padding: 0;
   height: 100%;
+  /* סקרולר מעל הרכיבים שקוף */
+  /* overflow-y: hidden; */
+  overflow-x: hidden;
+
+  
 }
 
 #root {

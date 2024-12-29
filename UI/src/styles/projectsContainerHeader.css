@@ -3,7 +3,7 @@
         color: white;
         text-align: center;
         padding: 1rem 0;
-        position: relative; /* תאפשר תנועה טבעית מתחת לתוכן */
+        position: relative;
         width: 100%; /* נמתח לכל הרוחב */
         height: 100px;
         box-sizing: border-box;

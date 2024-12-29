@@ -5,5 +5,16 @@
     max-width: 80%; 
     text-align: center; 
     border-radius: 8px; 
-    background-color: #ffebcc; 
+    background-color: #ffebcc;
+    font-size: larger;
+    direction: rtl;
 }
+
+.aboutBody p {
+    column-count: 2; /* מספר הטורים */
+    column-gap: 20px; /* רווח בין הטורים */
+    text-align: justify; /* יישור הטקסט בצורה אחידה */
+    padding: 20px; /* רווח פנימי */
+    font-family: 'Courier New', Courier, monospace;
+  }
+  

@@ -81,6 +81,10 @@ INSERT INTO projects (name, description, link, image)
 VALUES
 ('example no. 4', 'example to img valid', 'https://yt3.googleusercontent.com/ytc/AIdro_niQu6E6-fm35Ch1lahvAvBpg-ACLEHcX0lCPnlropVtA', 'https://yt3.googleusercontent.com/ytc/AIdro_niQu6E6-fm35Ch1lahvAvBpg-ACLEHcX0lCPnlropVtA');
 
+INSERT INTO projects (name, description, link, image)
+VALUES
+('example no. 5', 'example to img valid', 'https://yt3.googleusercontent.com/ytc/AIdro_niQu6E6-fm35Ch1lahvAvBpg-ACLEHcX0lCPnlropVtA', 'https://yt3.googleusercontent.com/ytc/AIdro_niQu6E6-fm35Ch1lahvAvBpg-ACLEHcX0lCPnlropVtA/400x200');
+
 -- הוספת תגובות לטבלת comments
 INSERT INTO comments (project_id, name, comment)
 VALUES
@@ -106,3 +110,4 @@ WHERE p.id = 1;
 SELECT * FROM contact_forms;
 SELECT * FROM work_feedback;
 
+SELECT * FROM comments;
