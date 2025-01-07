@@ -82,9 +82,9 @@
 
 // src/components/ContactForm.jsx
 import React, { useState } from "react";
-import "../styles/contactForm.css";
+import "../styles/ContactForm.css";
 
-const ContactForm = () => {
+function ContactForm() {
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -98,17 +98,16 @@ const ContactForm = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit =async (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     // **שליחה לדאטה בייס (להוסיף בקוד ה-backend המתאים)** 
-
-  const response = await  fetch("http://localhost:3000/ContactUs/contact", {
+    const response = await fetch("http://localhost:3000/ContactUs/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(formData),
-    })
+    });
     console.log("Form submitted:", formData);
     setIsSubmitted(true); // הצגת הודעת הצלחה
   };
@@ -133,8 +132,7 @@ const ContactForm = () => {
           name="fullName"
           value={formData.fullName}
           onChange={handleChange}
-          required
-        />
+          required />
       </div>
       <div className="form-group">
         <label htmlFor="email">Email</label>
@@ -144,8 +142,7 @@ const ContactForm = () => {
           name="email"
           value={formData.email}
           onChange={handleChange}
-          required
-        />
+          required />
       </div>
       <div className="form-group">
         <label htmlFor="phone">Phone</label>
@@ -154,8 +151,7 @@ const ContactForm = () => {
           id="phone"
           name="phone"
           value={formData.phone}
-          onChange={handleChange}
-        />
+          onChange={handleChange} />
       </div>
       <div className="form-group">
         <label htmlFor="message">Message</label>
@@ -164,12 +160,11 @@ const ContactForm = () => {
           name="message"
           value={formData.message}
           onChange={handleChange}
-          required
-        />
+          required />
       </div>
       <button type="submit" className="submit-button">Send</button>
     </form>
   );
-};
+}
 
 export default ContactForm;

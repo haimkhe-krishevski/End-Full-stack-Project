@@ -56,6 +56,8 @@ import Header from "./components/Header";
 import "./App.css";
 import "./styles/Header.css";
 import ContactUs from "./pages/ContactUs";
+import AddingAProject from "./components/AddingAProject";
+import AddProject from "./components/AddingAProject";
 
 function App() {
   return (
@@ -66,9 +68,9 @@ function App() {
             <Route path="/" element={<Projects />} />
             <Route path="/AboutMe" element={<AboutMe />} />
             <Route path="/ContactUs" element={<ContactUs />} />
+            <Route path="/AddProject" element={<AddProject />} />
           </Routes>
         </main>
-        {/* <footer className="footer">Footer</footer> */}
       </BrowserRouter>
     </div>
   );

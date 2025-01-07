@@ -1,11 +1,11 @@
 const { Pool } = require('pg');
 
 const pool = new Pool({
-  user: 'postgres', // שם המשתמש של PostgreSQL
-  host: 'localhost', // המחשב שבו רץ הדאטה בייס
+  user: 'postgres',       // שם המשתמש של PostgreSQL
+  host: 'db',       // שם השירות ב-Docker Compose
   database: 'end_project', // שם הדאטה בייס
-  password: '12345678', // הסיסמה שהגדרת
-  port: 5433, 
+  password: '12345678',   // הסיסמה שהגדרת
+  port: 5432,             // הפורט שבו הדאטה בייס פועל
 });
 
 // פונקציה לבדיקת חיבור

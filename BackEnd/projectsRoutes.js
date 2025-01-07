@@ -1,6 +1,22 @@
 const express = require('express');
 const router = express.Router();
+const multer = require('multer');
 const pool = require('./db'); // הנחה שאנחנו משתמשים ב-PG עם connection pool
+// const path = require('path');
+// app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
+
+
+// הגדרת אחסון למולטאר
+const storage = multer.diskStorage({
+  destination: (req, file, cb) => {
+    cb(null, './uploads');
+  },
+  filename: (req, file, cb) => {
+    cb(null, Date.now() + '-' );   // + file.originalname
+  },
+});
+
+const upload = multer({ storage });
 
 // קבלת כל הפרויקטים עם תגובות
 router.get('/', async (req, res) => {
@@ -19,18 +35,39 @@ router.get('/', async (req, res) => {
   }
 });
 
+// // הוספת פרויקט חדש
+// router.post('/', async (req, res) => {
+//   try {
+//     const { name, description, link, image } = req.body;
+//     const newProject = await pool.query(
+//       'INSERT INTO projects (name, description, link, image) VALUES ($1, $2, $3, $4) RETURNING *',
+//       [name, description, link, image]
+//     );
+//     res.json(newProject.rows[0]);
+//   } catch (err) {
+//     console.error(err.message);
+//     res.status(500).send('Server Error');
+//   }
+// });
+
 // הוספת פרויקט חדש
-router.post('/', async (req, res) => {
+router.post('/', upload.single('image'), async (req, res) => {
+  const { name, description, link } = req.body;
+  const image = req.file?.path || null;
+
+  if (!name || !description || !link || !image) {
+    return res.status(400).send('All fields are required');
+  }
+
   try {
-    const { name, description, link, image } = req.body;
-    const newProject = await pool.query(
+    const result = await pool.query(
       'INSERT INTO projects (name, description, link, image) VALUES ($1, $2, $3, $4) RETURNING *',
       [name, description, link, image]
     );
-    res.json(newProject.rows[0]);
+    res.status(201).json(result.rows[0]);
   } catch (err) {
-    console.error(err.message);
-    res.status(500).send('Server Error');
+    console.error(err);
+    res.status(500).send('Error adding project');
   }
 });
 

@@ -1,0 +1,38 @@
+version: '3.8'
+services:
+  frontend:
+    build:
+      context: ./UI
+    ports:
+      - "5173:80"
+    depends_on:
+      - backend
+
+  backend:
+    build:
+      context: ./BackEnd
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+    environment:
+      - PG_HOST=db
+      - PG_PORT=5432
+      - PG_USER=postgres
+      - PG_PASSWORD=12345678
+      - PG_DATABASE=end_project
+    entrypoint: ["./wait-for-it.sh", "db:5432", "--", "npm", "start"]
+
+  db:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 12345678
+      POSTGRES_DB: end_project
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
