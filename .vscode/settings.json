@@ -9,6 +9,16 @@
             "name": "end_project",
             "database": "end_project",
             "password": "12345678"
+        },
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5433,
+            "driver": "PostgreSQL",
+            "name": "db- 1",
+            "database": "end_project",
+            "username": "postgres",
+            "password": "12345678"
         }
     ]
 }
