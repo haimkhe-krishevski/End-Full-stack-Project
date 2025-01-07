@@ -2,7 +2,7 @@ import '../styles/AboutBody.css';
 
 const AboutBody = () => {
     return (
-        <div className="aboutBody">
+        <div className='wrapper'>        <div className="aboutBody">
 
             <h1>
                 היוש! אני יוסי שפיגלר, מוזיקאי
@@ -27,7 +27,9 @@ const AboutBody = () => {
 
                 סטוריטלרית | יועצת | מרצה | משביחה נכסים דיגיטליים   
             </p>
-        </div>
+        </div></div>
+
+ 
 
         
     );

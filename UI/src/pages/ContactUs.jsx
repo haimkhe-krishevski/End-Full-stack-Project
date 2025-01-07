@@ -9,7 +9,7 @@ const ContactUs = () => {
   return (
     <div className="page">
       <Header />
-    <div className="contact-us-page">
+    <div className="contact-us-page wrapper">
       <ContactForm />
     </div>
       <Footer />

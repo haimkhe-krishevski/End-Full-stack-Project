@@ -26,12 +26,12 @@ const ProjectsBody = () => {
 
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <div className="wrapper">Loading...</div>;
   }
 
   return (
-    <div className="page">
-    <div className="projectsBody-container">
+
+    <div className="projectsBody-container wrapper">
       {/* <div className="ProjectsContainerHeader">
         <ProjectsContainerHeader />
       </div> */}
@@ -70,7 +70,7 @@ const ProjectsBody = () => {
       )}
       </div>
     </div>
-    </div>
+
   );
 };
 
